@@ -295,8 +295,8 @@ main {
     padding: 10px;
   }
   .mark {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
   }
   .control-table {
     height: auto;
@@ -315,9 +315,20 @@ main {
     display: none;
   }
   .rival-control-table .mark {
-    margin: 20px 0 15px;
+    margin: 20px 0 5px;
   }
-  .control-table .mark {
-    margin: 0 5px;
+  .score {
+    min-width: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .btn {
+    padding: 0 18px;
+    font-size: 18px;
+    line-height: 30px;
+    min-width: 110px;
   }
 }
