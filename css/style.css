@@ -112,6 +112,7 @@ main {
   transform: rotate3d(1, 0, 0, 180deg);
   transform-style: preserve-3d;
   background: linear-gradient(#2f0606, #1c1212);
+  backface-visibility: hidden;
 }
 .mark-rival::before {
   content: "";
