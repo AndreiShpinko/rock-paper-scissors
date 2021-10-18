@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/fuck.png" />
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="rival-control-table">
+          <button class="btn restart">Restart</button>
+          <div class="mark mark-rival">
+            <img src="img/paper.png" alt="" />
+          </div>
+          <button class="btn keys">Keys</button>
+        </div>
+        <div class="popup-wrapper">
+          <div class="buffer"></div>
+          <div class="container">
+            <div class="popup">
+              <div class="row">
+                <div class="col">
+                  <div class="key">
+                    1
+                    <div class="mark rock" data-mark="rock">
+                      <img src="img/rock.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="key">
+                    2
+                    <div class="mark paper" data-mark="paper">
+                      <img src="img/paper.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="key">
+                    3
+                    <div class="mark scissor" data-mark="scissor">
+                      <img src="img/scissor.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="key">
+                    R
+                    <div class="btn">Restart</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="score loseTable">0</div>
+        <div class="score winTable">0</div>
+        <div class="control-table">
+          <div class="mark rock" data-mark="rock">
+            <img src="img/rock.png" alt="" />
+          </div>
+          <div class="mark paper" data-mark="paper">
+            <img src="img/paper.png" alt="" />
+          </div>
+          <div class="mark scissor" data-mark="scissor">
+            <img src="img/scissor.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
