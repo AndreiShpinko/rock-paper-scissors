@@ -100,8 +100,10 @@ function activeMarkRival() {
   let randomNumberAnimation = Math.floor(Math.random() * animationArr.length);
 
   elMarkRival.style.transform = "rotate3d(0, 0, 0, 180deg)";
-  elMarkRivalImg.style.opacity = 1;
-  
+  setTimeout(() => {
+    elMarkRivalImg.style.opacity = 1;
+  }, 250);
+
   setTimeout(() => {
     elMarkRival.style.transform = animationArr[randomNumberAnimation];
     elMarkRivalImg.style.opacity = 0;
