@@ -82,22 +82,29 @@ function keys() {
 }
 
 function activeMarkRival() {
-  let sources = ["rock", "paper", "scissor"];
-  let randomNumber = Math.floor(Math.random() * 3);
-  elMarkRivalImg.setAttribute("src", "img/" + sources[randomNumber] + ".png");
-  elMarkRival.setAttribute("data-mark", sources[randomNumber]);
+  let sources = ["rock", "paper", "scissor"],
+    randomNumber = Math.floor(Math.random() * 3);
+
+  elMarkRivalImg.setAttribute("src", `img/${sources[randomNumber]}.png`);
+  elMarkRival.dataset.mark = sources[randomNumber];
 
   elMarkRival.style.transition = "0.5s";
+
   let animationArr = [
     "rotate3d(1, 0, 0, 180deg)",
     "rotate3d(0, 1, 0, 180deg)",
     "rotate3d(1, 1, 0, 180deg)",
     "rotate3d(1, -1, 0, 180deg)",
   ];
+
   let randomNumberAnimation = Math.floor(Math.random() * animationArr.length);
+
   elMarkRival.style.transform = "rotate3d(0, 0, 0, 180deg)";
+  elMarkRivalImg.style.opacity = 1;
+  
   setTimeout(() => {
     elMarkRival.style.transform = animationArr[randomNumberAnimation];
+    elMarkRivalImg.style.opacity = 0;
   }, 2000);
 }
 
